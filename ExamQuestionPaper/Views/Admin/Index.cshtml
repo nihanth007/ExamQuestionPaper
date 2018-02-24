@@ -1,7 +1,20 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h2>Index</h2>
-
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Log-in</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/style.css" media="screen" type="text/css" />
+</head>
+<body>
+    <div class="login-card">
+        <h2><b>Upload The Question Paper</b></h2><br>
+        <form asp-action="Upload" asp-controller="Admin" method="post" enctype="multipart/form-data">
+            <input type="file" class="btn btn-warning btn-md" name="fileToUpload" id="fileToUpload">
+            <button type="button" class="btn btn-warning btn-md">Upload</button>
+        </form>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
