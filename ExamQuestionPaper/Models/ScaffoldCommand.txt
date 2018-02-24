@@ -1,0 +1,5 @@
+﻿//Run in Package Manager Console
+Scaffold-DbContext "Data Source=DESKTOP-JOPH4M3;Initial Catalog=ExamPapers;Persist Security Info=True;User ID=sa;Password=Lyvin##421" Microsoft.EntityFrameworkCore.SqlServer -Context "ExamPapersDbContext" -Force -OutputDir Models/ExamPapersDb
+
+//Place it Inside PwbDbContext.cs
+public ExamPapersDbContext(DbContextOptions options) : base(options) { }
